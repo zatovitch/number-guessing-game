@@ -1,13 +1,14 @@
 # Number Guessing Game
 
-## Overview
-The Number Guessing Game is a simple interactive game where the player attempts to guess a randomly generated number within a certain range. The game provides feedback on whether the guess is too high, too low, or correct.
+## Description
+The Number Guessing Game is a simple command-line game where the player tries to guess a randomly generated number between 1 and 100. The game provides feedback on whether the guess is too high or too low, and indicates if the guess is close to the target number.
 
 ## Features
-- Random number generation
+- Random number generation between 1 and 100
 - User input for guesses
-- Feedback on guesses
-- Win/loss conditions
+- Feedback on whether the guess is too high, too low, or close to the target number
+- Keeps track of the number of attempts
+- Congratulates the player when the correct number is guessed
 
 ## Getting Started
 
@@ -16,21 +17,26 @@ Make sure you have Python installed on your machine. You can download it from [p
 
 ### Installation
 1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/number-guessing-game.git
-   ```
+    ```sh
+    git clone https://github.com/zatovitch/number-guessing-game.git
+    ```
 2. Navigate to the project directory:
-   ```
-   cd number-guessing-game
-   ```
-3. Install the required dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
+    ```sh
+    cd number-guessing-game
+    ```
+3. (Optional) Create and activate a virtual environment:
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+    ```
+4. Install the required dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
 
-### Running the Game
+## Usage
 To start the game, run the following command:
-```
+```sh
 python src/game.py
 ```
 
@@ -38,6 +44,18 @@ python src/game.py
 To ensure the game functions as expected, run the tests using:
 ```
 python -m unittest discover -s tests
+```
+
+## Project Structure
+```
+number-guessing-game
+├── src
+│   ├── game.py
+│   └── __init__.py
+├── tests
+│   └── test_game.py
+├── requirements.txt
+└── README.md
 ```
 
 ## Contributing
